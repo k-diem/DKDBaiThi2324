@@ -7,6 +7,7 @@ namespace DKDBaiThi2324.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {}
     public DbSet<Person> Person {get; set;}
+        public DbSet<DKDBaiThi2324.Models.Employee> Employee { get; set; } = default!;
     
    
 
